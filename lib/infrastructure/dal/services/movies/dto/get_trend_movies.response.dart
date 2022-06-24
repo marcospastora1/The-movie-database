@@ -6,7 +6,7 @@ part 'get_trend_movies.response.g.dart';
 
 @JsonSerializable()
 class GetTrendMoviesResponse {
-  final List<MoviessData> results;
+  final List<MoviessData>? results;
 
   const GetTrendMoviesResponse({required this.results});
 

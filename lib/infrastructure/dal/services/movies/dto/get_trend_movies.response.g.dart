@@ -9,8 +9,8 @@ part of 'get_trend_movies.response.dart';
 GetTrendMoviesResponse _$GetTrendMoviesResponseFromJson(
         Map<String, dynamic> json) =>
     GetTrendMoviesResponse(
-      results: (json['results'] as List<dynamic>)
-          .map((e) => MoviessData.fromJson(e as Map<String, dynamic>))
+      results: (json['results'] as List<dynamic>?)
+          ?.map((e) => MoviessData.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
