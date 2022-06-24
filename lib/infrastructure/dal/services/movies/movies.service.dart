@@ -13,7 +13,7 @@ class MoviesService implements IMoviesService {
   @override
   Future<List<MoviessData>> getTrendMovies() async {
     final response = await _connect.get(
-      'trending/all/week?api_key=$apiKey&language=pt-BR',
+      'trending/movie/week?api_key=$apiKey&language=pt-BR',
       decoder: GetTrendMoviesResponse.fromJson,
     );
 
