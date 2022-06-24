@@ -1,6 +1,6 @@
 import 'package:ekko/domain/movies/models/movies.model.dart';
 
-const resultsMock = MoviesModel(
+const moviesMock = MoviesModel(
   genreId: [1, 2, 3],
   originalLanguage: 'en',
   originalTitle: 'Back to the future',
