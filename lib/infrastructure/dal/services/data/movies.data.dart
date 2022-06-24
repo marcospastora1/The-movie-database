@@ -36,7 +36,7 @@ class MoviessData {
   final String overview;
   final String title;
   final bool adult;
-  final double polpularity;
+  final double popularity;
 
   const MoviessData({
     required this.genreId,
@@ -53,7 +53,7 @@ class MoviessData {
     required this.overview,
     required this.title,
     required this.adult,
-    required this.polpularity,
+    required this.popularity,
   });
 
   factory MoviessData.fromJson(Map<String, dynamic> json) =>

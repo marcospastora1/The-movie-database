@@ -16,6 +16,6 @@ const listMoviesMock = [
     overview: 'Resumo do filme',
     title: 'De volta para o futuro',
     adult: false,
-    polpularity: 8000,
+    popularity: 8000,
   ),
 ];

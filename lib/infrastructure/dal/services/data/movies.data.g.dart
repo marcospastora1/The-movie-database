@@ -22,7 +22,7 @@ MoviessData _$MoviessDataFromJson(Map<String, dynamic> json) => MoviessData(
       overview: json['overview'] as String,
       title: json['title'] as String,
       adult: json['adult'] as bool,
-      polpularity: (json['polpularity'] as num).toDouble(),
+      popularity: (json['popularity'] as num).toDouble(),
     );
 
 Map<String, dynamic> _$MoviessDataToJson(MoviessData instance) =>
@@ -41,5 +41,5 @@ Map<String, dynamic> _$MoviessDataToJson(MoviessData instance) =>
       'overview': instance.overview,
       'title': instance.title,
       'adult': instance.adult,
-      'polpularity': instance.polpularity,
+      'popularity': instance.popularity,
     };

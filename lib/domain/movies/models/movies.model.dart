@@ -16,7 +16,7 @@ class MoviesModel extends Equatable {
   final String overview;
   final String title;
   final bool adult;
-  final double polpularity;
+  final double popularity;
 
   const MoviesModel({
     required this.genreId,
@@ -33,7 +33,7 @@ class MoviesModel extends Equatable {
     required this.overview,
     required this.title,
     required this.adult,
-    required this.polpularity,
+    required this.popularity,
   });
 
   factory MoviesModel.fromData(MoviessData data) {
@@ -52,7 +52,7 @@ class MoviesModel extends Equatable {
       overview: data.overview,
       title: data.title,
       adult: data.adult,
-      polpularity: data.polpularity,
+      popularity: data.popularity,
     );
   }
 
@@ -72,6 +72,6 @@ class MoviesModel extends Equatable {
         overview,
         title,
         adult,
-        polpularity,
+        popularity,
       ];
 }
