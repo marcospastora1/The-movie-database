@@ -1,6 +1,8 @@
 import 'package:ekko/domain/core/abstractions/domain/repositories/auth_repository.interface.dart';
+import 'package:ekko/domain/core/abstractions/domain/repositories/movies_repository.interface.dart';
 import 'package:ekko/domain/core/abstractions/infrastructure/http_connect.interface.dart';
 import 'package:ekko/domain/core/abstractions/infrastructure/services/auth_service.interface.dart';
+import 'package:ekko/domain/core/abstractions/infrastructure/services/movies_service.interface.dart';
 import 'package:ekko/domain/core/abstractions/infrastructure/storage.interface.dart';
 import 'package:ekko/domain/core/abstractions/presentation/field.interface.dart';
 import 'package:ekko/presentation/shared/loading/loading.interface.dart';
@@ -31,3 +33,7 @@ class FieldMock extends IField {
   @override
   void dispose() {}
 }
+
+class MoviesRepositoryMock extends Mock implements IMoviesRepository {}
+
+class MoviesServiceMock extends Mock implements IMoviesService {}
