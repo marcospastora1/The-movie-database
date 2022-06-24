@@ -19,7 +19,7 @@ void main() {
   });
 
   group('Trend Movies', () {
-    const url = 'trending/all/week?api_key=$apiKey&language=pt-BR';
+    const url = 'trending/movie/week?api_key=$apiKey&language=pt-BR';
     test(
       'Should return list movies with success',
       () async {
