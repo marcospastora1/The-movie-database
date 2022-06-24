@@ -1,3 +1,4 @@
+import 'package:ekko/infrastructure/navigation/bindings/controllers/home.controller.binding.dart';
 import 'package:ekko/presentation/home/home.screen.dart';
 import 'package:get/get.dart';
 
@@ -15,6 +16,7 @@ class Nav {
     GetPage(
       name: Routes.home,
       page: () => HomeScreen(),
+      binding: HomeControllerBinding(),
     ),
   ];
 }
