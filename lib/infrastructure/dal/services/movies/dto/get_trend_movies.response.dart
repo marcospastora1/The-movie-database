@@ -10,7 +10,7 @@ class GetTrendMoviesResponse {
 
   const GetTrendMoviesResponse({required this.results});
 
-  factory GetTrendMoviesResponse.fromJson(Map<String, dynamic> json) =>
+  factory GetTrendMoviesResponse.fromJson(json) =>
       _$GetTrendMoviesResponseFromJson(json);
 
   Map<String, dynamic> toJson() => _$GetTrendMoviesResponseToJson(this);
