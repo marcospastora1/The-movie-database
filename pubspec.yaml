@@ -18,17 +18,15 @@ dependencies:
   get_storage: ^2.0.3
   logger: ^1.1.0
   equatable: ^2.0.3
-  rxdart: ^0.26.0
+  rxdart: ^0.27.7
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  test:
-
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
   build_runner: ^2.1.4
-  json_serializable: ^5.0.2
+  json_serializable: ^6.5.4
   faker: ^2.0.0
   mocktail: ^0.2.0
 

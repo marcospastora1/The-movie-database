@@ -29,7 +29,7 @@ class HomeController extends GetxController implements IHomeController {
     try {
       _loading.isLoading = true;
       final response = await _moviesRepository.getTrendMovies();
-      _movies.value!.assignAll(response);
+      _movies.value = response;
     } catch (err) {
       rethrow;
     } finally {
